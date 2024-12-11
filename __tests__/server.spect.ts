@@ -1,7 +1,7 @@
 import app from '../src/server.js';
 import request from 'supertest';
 
-decribe("Conjunto de test de servidor", () => {
+describe("Conjunto de test de servidor", () => {
 
     test("test Enpoint /", async () => {
         return await request(app)
