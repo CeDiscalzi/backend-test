@@ -6,7 +6,9 @@ import { contarCoincidenciasEnCadena } from '../app/cadenas.js';
 let mainRouter = express.Router();
 
 mainRouter.get("/", (_req, res) => {
-    return res.send(`Hola mundo al usuario ${configuration.username}`);
+    const username = configuration.username;
+    const port = configuration.port;
+    return res.send(`Hola mundo al usuario ${username} desde el puerto ${port}`);
 });
 
 mainRouter.get("/api-key", (_req, res) => {

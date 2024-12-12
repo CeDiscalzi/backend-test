@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment {
         USERNAME = "cdiscalzi"
+        PORT = "3001"
     }
     stages {
         stage("Build - instalacion de dependencias") {
