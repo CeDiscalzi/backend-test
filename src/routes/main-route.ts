@@ -22,7 +22,7 @@ mainRouter.get("/validar-rut", (req, res) => {
 mainRouter.get("/buscar-subcadena", (req, res) => {
     const { cadena, subcadena } = req.query as { cadena: string, subcadena: string };
     const cantidadRepeticiones = contarCoincidenciasEnCadena(cadena, subcadena);
-    return res.send(`La cadeja "${cadena}" tiene ${cantidadRepeticiones} repeticiones de la subcadena "${subcadena}"`);
+    return res.send(`La cadena "${cadena}" tiene ${cantidadRepeticiones} repeticiones de la subcadena "${subcadena}"`);
 });
 
 export default mainRouter;
